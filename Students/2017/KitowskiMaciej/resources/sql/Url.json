@@ -1,0 +1,63 @@
+{
+  "SQLITE": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Url(",
+        "ID   INTEGER   PRIMARY KEY   AUTOINCREMENT,",
+        "cat_ID   INTEGER,",
+        "title  VARCHAR(255)  NOT NULL,",
+        "url  VARCHAR(255)  NOT NULL,",
+        "description  VARCHAR(255),",
+        "FOREIGN KEY(cat_ID) REFERENCES Subcategory(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Url(title, url, description, cat_ID) VALUES(?, ?, ?, ?)",
+    "GET": "SELECT ID, title, url, description, cat_ID FROM Url WHERE ID = ?",
+    "GET_ALL": "SELECT ID, title, url, description, cat_ID FROM Url",
+    "GET_CATEGORY": "SELECT ID, title, url, description, cat_ID FROM Url WHERE cat_ID = ?",
+    "UPDATE": "UPDATE Url SET title=?, url=?, description=?, cat_ID=? WHERE ID = ?",
+    "DELETE": "DELETE FROM Url WHERE id = ?"
+  },
+  "MYSQL": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Url(",
+        "ID   int   NOT NULL  AUTO_INCREMENT,",
+        "cat_ID   int,",
+        "title  VARCHAR(255)  NOT NULL,",
+        "url  VARCHAR(255)  NOT NULL,",
+        "description  VARCHAR(255),",
+        "PRIMARY KEY(ID),",
+        "FOREIGN KEY(cat_ID) REFERENCES Subcategory(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Url(title, url, description, cat_ID) VALUES(?, ?, ?, ?)",
+    "GET": "SELECT ID, title, url, description, cat_ID FROM Url WHERE ID = ?",
+    "GET_ALL": "SELECT ID, title, url, description, cat_ID FROM Url",
+    "GET_CATEGORY": "SELECT ID, title, url, description, cat_ID FROM Url WHERE cat_ID = ?",
+    "UPDATE": "UPDATE Url SET title=?, url=?, description=?, cat_ID=? WHERE ID = ?",
+    "DELETE": "DELETE FROM Url WHERE id = ?"
+  },
+  "POSTGRES": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Url(",
+        "ID   SERIAL  PRIMARY KEY,",
+        "cat_ID   int,",
+        "title  VARCHAR(255)  NOT NULL,",
+        "url  VARCHAR(255)  NOT NULL,",
+        "description  VARCHAR(255),",
+        "CONSTRAINT cat_fk FOREIGN KEY(cat_ID) REFERENCES Subcategory(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Url(title, url, description, cat_ID) VALUES(?, ?, ?, ?)",
+    "GET": "SELECT ID, title, url, description, cat_ID FROM Url WHERE ID = ?",
+    "GET_ALL": "SELECT ID, title, url, description, cat_ID FROM Url",
+    "GET_CATEGORY": "SELECT ID, title, url, description, cat_ID FROM Url WHERE cat_ID = ?",
+    "UPDATE": "UPDATE Url SET title=?, url=?, description=?, cat_ID=? WHERE ID = ?",
+    "DELETE": "DELETE FROM Url WHERE id = ?"
+  }
+}

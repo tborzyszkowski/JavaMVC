@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="560"
+   height="560"
+   viewBox="0 0 559.99991 560.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="treelist_node.svg"
+   inkscape:export-filename="/home/maciej/Dokumenty/Bookmarker/resources/icons/treelist_node_opened.png"
+   inkscape:export-xdpi="2.3332653"
+   inkscape:export-ydpi="2.3332653">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="92.862533"
+     inkscape:cy="327.83473"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     units="px"
+     fit-margin-left="10"
+     fit-margin-bottom="10"
+     fit-margin-right="10" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-329.35414,-104.73611)">
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 865.8686,306.95336 631.58288,545.52479 c -13.53305,9.64648 -28.06311,10.69375 -44.28571,-2.85714 L 354.44003,316.95336 c -12.55214,-15.68624 -20.37813,-32.27952 0,-54.28571 l 37.14285,-35.71429 c 23.67737,-17.71266 39.0711,-8.60209 52.85715,5.71429 l 150,154.28571 c 6.52035,4.99812 14.1789,6.42992 25.71428,-4.28571 l 160,-155.71429 c 21.26549,-15.39816 39.20995,-13.16925 54.28572,4.28572 l 37.14285,42.85714 c 11.17822,15.73884 2.013,24.03495 -5.71428,32.85714 z"
+       id="path3347"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:export-filename="/home/maciej/Dokumenty/Bookmarker/resources/icons/path3347.png"
+       inkscape:export-xdpi="2.3332653"
+       inkscape:export-ydpi="2.3332653" />
+  </g>
+</svg>
