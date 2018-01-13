@@ -1,0 +1,42 @@
+{
+  "SQLITE": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Category(",
+        "ID   INTEGER   PRIMARY KEY AUTOINCREMENT,",
+        "name   VARCHAR(255)  NOT NULL",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Category(name) VALUES(?)",
+    "GET": "SELECT ID, name FROM Category WHERE id = ?",
+    "GET_ALL": "SELECT ID, name FROM Category",
+    "UPDATE": "UPDATE Category SET name=? WHERE id = ?",
+    "DELETE": "DELETE FROM Category WHERE id = ?"
+  },
+  "MYSQL": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Category(",
+        "ID   int   NOT NULL  AUTO_INCREMENT,",
+        "name   VARCHAR(255)  NOT NULL,",
+        "PRIMARY KEY(ID)",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Category(name) VALUES(?)",
+    "GET": "SELECT ID, name FROM Category WHERE id = ?",
+    "GET_ALL": "SELECT ID, name FROM Category",
+    "UPDATE": "UPDATE Category SET name=? WHERE id = ?",
+    "DELETE": "DELETE FROM Category WHERE id = ?"
+  },
+  "POSTGRES": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Category(",
+        "ID   SERIAL  PRIMARY KEY,",
+        "name   VARCHAR(255)  NOT NULL",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Category(name) VALUES(?)",
+    "GET": "SELECT ID, name FROM Category WHERE id = ?",
+    "GET_ALL": "SELECT ID, name FROM Category",
+    "UPDATE": "UPDATE Category SET name=? WHERE id = ?",
+    "DELETE": "DELETE FROM Category WHERE id = ?"
+  }
+}

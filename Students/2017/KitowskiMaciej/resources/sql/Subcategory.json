@@ -1,0 +1,58 @@
+{
+  "SQLITE": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Subcategory(",
+        "ID   INTEGER   PRIMARY KEY   AUTOINCREMENT,",
+        "parent_ID  INTEGER,",
+        "name   VARCHAR(255)  NOT NULL,",
+        "FOREIGN KEY(parent_ID) REFERENCES Category(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Subcategory(name, parent_ID) VALUES(?, ?)",
+    "GET": "SELECT ID, name, parent_ID FROM Subcategory WHERE ID = ?",
+    "GET_ALL": "SELECT ID, name, parent_ID FROM Subcategory",
+    "GET_MAINCAT": "SELECT ID, name, parent_ID FROM Subcategory WHERE parent_ID = ?",
+    "UPDATE": "UPDATE Subcategory SET name=?, parent_ID=? WHERE id = ?",
+    "DELETE": "DELETE FROM Subcategory WHERE id = ?"
+  },
+  "MYSQL": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Subcategory(",
+        "ID   int   NOT NULL  AUTO_INCREMENT,",
+        "parent_ID  int,",
+        "name   VARCHAR(255)  NOT NULL,",
+        "PRIMARY KEY(ID),",
+        "FOREIGN KEY(parent_ID) REFERENCES Category(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Subcategory(name, parent_ID) VALUES(?, ?)",
+    "GET": "SELECT ID, name, parent_ID FROM Subcategory WHERE ID = ?",
+    "GET_ALL": "SELECT ID, name, parent_ID FROM Subcategory",
+    "GET_MAINCAT": "SELECT ID, name, parent_ID FROM Subcategory WHERE parent_ID = ?",
+    "UPDATE": "UPDATE Subcategory SET name=?, parent_ID=? WHERE id = ?",
+    "DELETE": "DELETE FROM Subcategory WHERE id = ?"
+  },
+  "POSTGRES": {
+    "CREATE_TABLE": [
+      "CREATE TABLE Subcategory(",
+        "ID   SERIAL  NOT NULL,",
+        "parent_ID  int,",
+        "name   VARCHAR(255)  NOT NULL,",
+        "CONSTRAINT cat_pk PRIMARY KEY(ID),",
+        "CONSTRAINT mCat_fk FOREIGN KEY(parent_ID) REFERENCES Category(ID)",
+          "ON UPDATE CASCADE",
+          "ON DELETE CASCADE",
+      ")"
+    ],
+    "INSERT": "INSERT INTO Subcategory(name, parent_ID) VALUES(?, ?)",
+    "GET": "SELECT ID, name, parent_ID FROM Subcategory WHERE ID = ?",
+    "GET_ALL": "SELECT ID, name, parent_ID FROM Subcategory",
+    "GET_MAINCAT": "SELECT ID, name, parent_ID FROM Subcategory WHERE parent_ID = ?",
+    "UPDATE": "UPDATE Subcategory SET name=?, parent_ID=? WHERE id = ?",
+    "DELETE": "DELETE FROM Subcategory WHERE id = ?"
+  }
+}
