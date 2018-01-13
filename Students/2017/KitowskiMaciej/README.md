@@ -1,5 +1,8 @@
 # Bookmarker
-Univeristy project on Object-oriented Programming (part-time BSc studies of Computer Science on University of Gdansk - 2017/2018 winter semester)
+Univeristy project on Object-oriented Programming (part-time BSc studies of Computer Science on University of Gdansk - 2017/2018 winter semester) <br><br>
+**Author:** Maciej Kitowski <br>
+**Github:** https://github.com/MaciejKitowski <br>
+**Linkedin:** https://www.linkedin.com/in/maciejkitowski/
 
 # Configuration
 ## Project
