@@ -1,5 +1,5 @@
 # Phonebook
-Univeristy project on Object-oriented Programming (part-time BSc studies of Computer Science on University of Gdansk - 2017/2018 winter semester) <br><br>
+University project on Object-oriented Programming (part-time BSc studies of Computer Science on University of Gdansk - 2017/2018 winter semester) <br><br>
 **Author:** Janusz Schőnrock <br>
 **Github:** https://github.com/johnnyrock92 <br>
 **Linkedin:** www.linkedin.com/in/janusz-schonrock/
